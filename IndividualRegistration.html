@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creation of Individual Registration Form</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 80px;  
+            max-width: 80%;
+            
+        }
+      .form-container {
+        display: flex;
+        justify-content: space-around;
+        
+       
+      }
+      header{
+        background-color: rgba(34, 184, 184, 0.781);
+      }
+      .heading{
+        color: crimson;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+      }
+      .body{
+        background-color: rgb(0, 247, 255);
+        padding: 20px;
+      }
+      .secondary-heading{
+        font-size: 25px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       
+        color: rgb(223, 54, 54);
+        
+      }
+      .fontss{
+        font-size: 18px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        cursor: pointer;
+      
+      }
+      .decorative-text{
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+      }
+      .btn{
+        text-align: center;
+        
+      }
+     .buttonss{
+        font-size: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 5px;
+        
+     }
+     .cenntt{
+        position: relative;
+        left: 100px;
+     }
+
+    </style>
+  </head>
+  <body>
+    <h1>Creation of Individual Registration Fom Using HTML and CSS</h1>
+    <div class="container">
+      <header>
+        <h1 class="heading">INDIVIDUAL REGISTRATION</h1>
+      </header>
+      <main class="body">
+        <section class="first">
+          <h2 class="secondary-heading">User Particulars</h2>
+          <form class="cenntt"    action="">
+            <table>
+              <tr class="fontss">
+                <td><label for="login">*Login ID</label></td>
+                <td><input type="text" id="login" /></td>
+              </tr>
+
+              <tr class="fontss">
+                <td><label for="password">*Password</label></td>
+                <td><input type="password" name="" id="password" /></td>
+              </tr>
+              <tr class="fontss">
+                <td><label for="Cpassword">*Confirm Password</label></td>
+                <td><input type="password" name="" id="Cpassword" /></td>
+              </tr>
+            </table>
+          </form>
+        </section>
+        <section class="second">
+          <h2 class="secondary-heading">Personal Particulars</h2>
+          <div class="form-container">
+            <form action="">
+              <table>
+                <tr class="fontss">
+                  <td><label for="salutation">Salutation</label></td>
+                  <td>
+                    <select name="" id="salutation">
+                      <option value="">Select</option>
+                      <option value="">Mr.</option>
+                      <option value="">Mrs.</option>
+                      <option value="">Miss.</option>
+                      <option value="">Master</option>
+                    </select>
+                  </td>
+                </tr >
+                <tr class="fontss">
+                  <td><label for="middlename">Middle Name</label></td>
+                  <td><input type="text" id="middlename" /></td>
+                </tr>
+                <tr class="fontss">
+                  <td><label for="resident">Resident Status</label></td>
+                  <td>
+                    <select name="" id="resident">
+                      <option value="">Select</option>
+                      <option value="">Ahmdabad</option>
+                      <option value="">Vadodra</option>
+                      <option value="">Bhuj</option>
+                      <option value="">Vapi</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr class="fontss">
+                  <td><label for="email">Email Id</label></td>
+                  <td><input type="email" name="" id="email" /></td>
+                </tr>
+              </table>
+            </form>
+            <form action="">
+              <table>
+                <tr class="fontss">
+                  <td><label for="firstname">*First Name</label></td>
+                  <td><input type="text" id="firstname" /></td>
+                </tr>
+                <tr class="fontss">
+                  <td><label for="lastname">*Last Name</label></td>
+                  <td><input type="text" id="lastname" /></td>
+                </tr>
+                <tr class="fontss">
+                  <td><label for="resident">*Country</label></td>
+                  <td>
+                    <select name="" id="resident">
+                      <option value="">Select</option>
+                      <option value="">INDIA</option>
+                      <option value="">AMERICA</option>
+                      <option value="">BANGKOK</option>
+                      <option value="">NEPAL</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr class="fontss">
+                  <td><label for="mobile">*Mobile Number</label></td>
+                  <td><input type="number" name="" id="mobile" /></td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </section>
+        <section class="third">
+          <h2 class="secondary-heading">Account Particulars</h2>
+          <div class="form-container">
+            <form action="">
+              <table>
+                <tr class="fontss">
+                  <td><label for="acount">15 Digit Account No.</label></td>
+                  <td><input type="number" name="" id="account" /></td>
+                </tr>
+                <tr class="fontss">
+                  <td><label for="fund">Fund Transfer</label></td>
+                  <td>
+                    <select name="" id="fund">
+                      <option value="">Select</option>
+                      <option value="">NEFT</option>
+                      <option value="">RTGS</option>
+                      <option value="">NET BANKING</option>
+                      <option value="">Demand Draft</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </form>
+            <form action="">
+              <table>
+                <tr class="fontss">
+                  <td><label for="nickname">*Nick Name</label></td>
+                  <td><input type="text" id="nickname" /></td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </section>
+        <section class="fourth">
+          <h2 class="secondary-heading">Declaration</h2>
+          <ul>
+            <li>
+              <p class="decorative-text">
+                I have read, understood and hereby agree to the Terms and
+                Conditions in respect of all products and channels.
+              </p>
+            </li>
+            <li>
+              <p class="decorative-text">
+                I understand that any changes in the terms and conditions
+                applicable to this relationship would be made <br />available to
+                me on request at IOB branches.
+              </p>
+            </li>
+            <li>
+              <p class="decorative-text">
+                I confirm that all accounts under this login name are operated
+                singly and in case of joint account operated by either or
+                survivor/ anyone or survivor(s) under <br />
+                his/her joint name respectively. I do hereby declare that
+                information furnished in this form is true to the <br />
+                best of my knowledge and belif
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="btn">
+            <form action="">
+                <tr class="fontss">
+                    <td><label for="submit"></label></td>
+                    <td><input type="submit" class="buttonss"   id="submit"   value="SUBMIT"></td>
+                </tr>
+                <tr class="fontss">
+                    <td><label for="reset"></label></td>
+                    <td><input type="reset" class="buttonss"  id="reset" value="RESET"></td>
+                </tr>
+            </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

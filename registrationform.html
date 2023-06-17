@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Creation Using HTML,CSS</title>
+    <style>
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        form {
+          border: 7px solid #332c46;
+          margin-top: 50px;
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          border-radius: 13px;
+          background-image: url(3d-abstract-geometrical-kaleidoscope-transformation-fractal-distortion-surface-3d-render-illustration.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          
+        }
+        .registration {
+          font-size: 30px;
+          font-weight: bolder;
+          text-align: center;
+          padding-bottom: 50px;
+  
+          position: relative;
+          left: 82px;
+        }
+        .styletext {
+          font-size: 20px;
+          font-weight: 600;
+          padding: 10px;
+        }
+        .cent{
+            text-align: center;
+            padding: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: 800;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .cent:hover{
+            background-color: chartreuse;
+            font-size: 20px;
+        }
+        
+        
+        
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <form action="action.php">
+          <table align="center" width="50%">
+            <th class="registration" align="center">Registration Form</th>
+            <tr>
+              <td class="styletext"><label for="firstname">First Name</label></td>
+              <td>
+                <input
+                  type="text"
+                  id="firstname"
+                  placeholder="Enter your First Name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="styletext"><label for="lastname">Last Name</label></td>
+              <td>
+                <input
+                  type="text"
+                  id="lastname"
+                  placeholder="Enter your Last Name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="styletext">
+                <label for="Department">Department/Office</label>
+              </td>
+              <td>
+                <select name="" id="Department">
+                  Please Select your Department
+                  <option value="">None</option>
+                  <option value="">Agriculture</option>
+                  <option value="">Medical</option>
+                  <option value="">Revenue</option>
+                  <option value="">Finance</option>
+                  <option value="">Private</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="styletext"><label for="username">Username</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="username"
+                  id=""
+                  placeholder="Enter  Username "
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="styletext">
+                <label for="password">Enter Password</label>
+              </td>
+              <td><input type="password" name="password" id="" /></td>
+            </tr>
+            <tr>
+              <td class="styletext">
+                <label for="Cpassword">Confirm Password</label>
+              </td>
+              <td><input type="password" name="Cpassword" id="" /></td>
+            </tr>
+            <tr>
+              <td class="styletext"><label for="email">Email Address</label></td>
+              <td>
+                <input
+                  type="email"
+                  name="email"
+                  id=""
+                  placeholder="user@xyz.com"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="styletext">
+                <label for="phone">Enter Phone Number </label>
+              </td>
+              <td><input type="tel" name="phone" id="" placeholder="+91" /></td>
+            </tr>
+            <tr >
+              <td ><input class="cent" type="submit" value="SUBMIT" /></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </body>
+  </html>
+  

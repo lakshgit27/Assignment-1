@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design of a College Management Table using rowspan and colspan</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+        }
+        .tabless{
+            width: 50%;
+        }
+        .timetable{
+            padding: 15px;
+            text-align: left;
+            background-color: rgb(192, 55, 55);
+            font-size: 25px;
+            font-weight: 800;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+        }
+        .timetabless{
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(192, 55, 55);
+            font-size: 20px;
+            font-weight: 800;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+        
+
+        }
+        .Program{
+            padding: 15px;
+            text-align: left;
+            background-color: rgb(56, 204, 241);
+            font-size: 25px;
+            font-weight: 800;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+
+        }
+        .Programm{
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(56, 204, 241);
+            font-size: 20px;
+            font-weight: 800;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+
+        }
+        .department{
+            padding: 15px;
+            text-align: left;
+            background-color: rgb(34, 81, 109);
+            font-size: 25px;
+            font-weight: 800;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+
+        }
+        .departmentt{
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(34, 81, 109);
+            font-size: 20px;
+            font-weight: 800;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+
+
+        }
+        .section{
+            padding-top: 20px;
+        }
+        .admin{
+
+            padding-bottom: 40px;
+            color: white;
+        }
+        .top-header{
+            background-color:rgb(34, 81, 109); 
+            font-size: 30px;
+            font-weight: 800;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .college{
+            background-color: rgb(146, 20, 46);
+            padding: 10px;
+            font-size: 35px;
+            font-weight: 800;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+            cursor: pointer;
+        }
+        .colleges{
+            background-color: rgb(146, 20, 46);
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 800;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+            cursor: pointer;
+
+        }
+        .header{
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <table border="2" width="100%">
+            <tr>
+
+                <td width="80%" class="college">ABC COLLEGE</td>
+                <td class="colleges">HOME</td>
+                <td class="colleges">ACADMICS</td>
+                <td class="colleges">ADMISSION</td>
+            </tr>
+        </table>
+    </div>
+    <div class="admin">
+        <table class="top-header" width="100%" border="2">
+            <tr><td>Admin Dashboard</td></tr>
+        </table>
+    </div>
+    <div class="container">
+       
+        <table width="50%" border="2" class="tabless">
+            <tr align="center">
+               
+                <td class="timetable" colspan="5">Time Table</td>
+             
+            </tr>
+            <tr align="center" class="timetabless">
+                <td >Class Name</td>
+                <td>Time</td>
+                <td>Day</td>
+                <td>Subject</td>
+                <td>Room No.</td>
+            </tr>
+            <tr align="center">
+                <td rowspan="2">MCS 2</td>
+                <td>18:00</td>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">OOP</td>
+                <td rowspan="2">21</td>
+            </tr>
+            <tr align="center"><td>21:00</td></tr>
+            <tr align="center">
+                <td rowspan="2">MCS 2</td>
+                <td>18:00</td>
+                <td rowspan="2">Tuesday</td>
+                <td rowspan="2">DBMS</td>
+                <td rowspan="2">21</td>
+            </tr>
+            <tr align="center"><td>21:00</td></tr>
+            <tr align="center">
+                <td rowspan="2">MCS 2</td>
+                <td>18:00</td>
+                <td rowspan="2">Wednesday</td>
+                <td rowspan="2">DLD</td>
+                <td rowspan="2">7</td>
+            </tr>
+            <tr align="center"><td>21:00</td></tr>
+            <tr align="center">
+                <td rowspan="2">MCS 2</td>
+                <td>18:00</td>
+                <td rowspan="2">Thursday</td>
+                <td rowspan="2">SE</td>
+                <td rowspan="2">21</td>
+            </tr>
+            <tr align="center"><td>21:00</td></tr>
+            <tr align="center">
+                <td rowspan="2">MCS 2</td>
+                <td>18:00</td>
+                <td rowspan="2">Friday</td>
+                <td rowspan="2">WEB</td>
+                <td rowspan="2">21</td>
+            </tr>
+            <tr align="center"><td>21:00</td></tr>
+            <tr align="center">
+                <td rowspan="2">MIT 2</td>
+                <td>18:00</td>
+                <td rowspan="2">Saturday</td>
+                <td rowspan="2">MBAD</td>
+                <td rowspan="2">12</td>
+            </tr>
+            <tr align="center"><td>21:00</td></tr>
+    
+         
+        </table>
+        <table width="50%" border="2" class="tabless">
+            <tr>
+            
+                <td colspan="3" class="Program">Program List</td>
+                
+            </tr>
+            <tr class="Programm">
+                <td  colspan="1" >Course Code </td>
+                <td  colspan="3">Course Name</td>
+            </tr>
+            <tr>
+                <td>AHL</td>
+                <td>Allied Health Sciences</td>
+            </tr>
+            <tr>
+                <td>B.Arch.</td>
+                <td>Bachelor in Architecture</td>
+            </tr>
+            <tr>
+                <td>B.Fashion</td>
+                <td>Bachelor in Fashion</td>
+            </tr>
+            <tr>
+                <td>BBA</td>
+                <td>Bachelor in Business Administration</td>
+            </tr>
+            <tr>
+                <td>BSAI</td>
+                <td>Bachelor in Artificial Intelligence</td>
+            </tr>
+            <tr>
+                <td>BSEE</td>
+                <td>Bachelor in Electrical Engineering</td>
+            </tr>
+            <tr>
+                <td>M.Arch.</td>
+                <td>Master in Architecture</td>
+            </tr>
+            <tr>
+                <td>M.Com.</td>
+                <td>Master in Commerce</td>
+            </tr>
+            <tr>
+                <td>MCS</td>
+                <td>Master in Computer Science</td>
+            </tr>
+            <tr>
+                <td>MIT</td>
+                <td>Master in Information Technology</td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="section">
+        <table class="table-two" width="100%" border="2">
+            <tr><td  colspan="5"  class="department">Department Subject Detail</td></tr>
+            <tr class="departmentt">
+                <td>Course Code</td>
+                <td>Course Title</td>
+                <td>Semester</td>
+                <td>Total Subjects</td>
+                <td>Total Credit Hours</td>
+            </tr>
+            <tr>
+                <td>BSAI</td>
+                <td>Bachelor in Artificial Intelligence</td>
+                <td>1</td>
+                <td>1</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>MCS</td>
+                <td>Master in Computer Science</td>
+                <td>1</td>
+                <td>3</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>MCS</td>
+                <td>Master in Computer Science</td>
+                <td>2</td>
+                <td>5</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>MIT</td>
+                <td>Master in Information Technology</td>
+                <td>2</td>
+                <td>2</td>
+                <td>7</td>
+            </tr>
+
+        </table>
+    </div>
+    
+    
+</body>
+</html>

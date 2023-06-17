@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creation of the Dropdown List in HTML</title>
+    <style>
+        .padd{
+            padding: 20px;
+            font-size: 30px;
+            font-weight: 800;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            cursor: pointer;
+
+        }
+        .decoration{
+            padding: 20px;
+            font-size: 30px;
+            font-weight: 800;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            cursor: pointer;
+            border: 2px solid black;
+            background-color: chocolate;
+
+        }
+        .tb{
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 50%;
+            padding: 20px;
+        }
+        .tb:hover{
+            background-color: crimson;
+        }
+
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <table class="tb">
+        <tr>
+          <td><label for="city" class="padd"> Please Select a City</label></td>
+          <td>
+            <select name="" id="city" class="decoration">
+              <option value="">None</option>
+              <option value="">Ahmedabad</option>
+              <option value="">Surat</option>
+              <option value="">Valsad</option>
+              <option value="">Vapi</option>
+              <option value="">Rajkot</option>
+              <option value="">Vadodra</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

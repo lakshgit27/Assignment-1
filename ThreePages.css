@@ -1,0 +1,67 @@
+.container3{
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgb(207, 221, 15);
+    color: black;
+    margin-top: 100px;
+}
+.Head1{
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    text-align: center;
+    color: rgb(87, 39, 80);
+    
+
+}
+.Head2{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    text-align: center;
+    color: rgb(87, 39, 80);
+    
+
+}
+.navigation{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+}
+li.dec{
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(14, 50, 148);
+}
+.main{
+    background-color: rgb(83, 104, 95);
+    cursor: pointer;
+}
+.main:hover{
+    background-color: rgb(231, 7, 7);
+}
+.arti img{
+border: 2px solid black;
+border-radius: 5px;
+position: relative;
+left: 30px;
+}
+.para{
+    font-size: 18px;
+}
+.fooot{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+    list-style: none;
+    cursor: pointer;
+}
+.fooot:hover{
+    font-size: 22px;
+    color: rgb(75, 46, 9);
+
+}
